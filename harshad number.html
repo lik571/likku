@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>harshad number</title>
+    </head>
+    <body>
+        <center><h1>harshad number </h1></center>
+        <script>
+           var num=171;
+           var x=0,sum=0,n;
+           n=num;
+           while(num>0) 
+           {
+               x=num%10;
+               sum=sum+x;
+               num=num/10;
+           }
+           if(n%sum==0)
+           {
+               document.write(n+ " is harshad number");
+           }
+           else{
+            document.write(n+ " is  not a  harshad number"); 
+           }
+        </script>
+
+    </body>
+</html>

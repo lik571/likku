@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hierarchial inheritance</title>
+    </head>
+    <body>
+        <center><h1>Hierarchial inheritance</h1></center>
+        <script>
+            class A{
+                add()
+                {
+                    var a=10,b=20;
+                    document.write("<br>addition:",a+b);
+                }
+            }
+            class B {
+                sub()
+                {
+                    var a=10,b=20;
+                    document.write("<br>subtraction:",a-b);
+                }
+            }
+            class C extends A ,B {
+                mul()
+                {
+                    var a=10,b=20;
+                    document.write("<br>multiplication:",a*b);
+                }
+            }
+            var obj1=new C();
+            obj1.add();
+            obj1.sub();
+            obj1.mul();
+        </script>
+    </body>
+</html>
